@@ -1,5 +1,12 @@
 <template>
-  <Tutorial />
+  <div class="m-10">
+    <h1 class="m-auto text-center">ここは人口を検索することができるよ</h1>
+    <ul>
+      <li>
+        <a href="/population">人口推移</a>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script lang="ts">
