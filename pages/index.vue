@@ -3,7 +3,7 @@
     <h1 class="m-auto text-center">ここは人口を検索することができるよ</h1>
     <ul>
       <li>
-        <a href="/population">人口推移</a>
+        <a class="text-green-500" href="/population">人口推移</a>
       </li>
     </ul>
   </div>
