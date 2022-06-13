@@ -15,7 +15,7 @@ export const state = (): Data => ({
 })
 
 export const mutations = {
-  getPref(state: any, payload: unknown): void {
+  insertPref(state: any, payload: unknown): void {
     state.pref = payload
   },
 }
@@ -28,7 +28,8 @@ export const actions = {
       })
       .then((response) => {
         const fetchPerData = response.data.result
-        commit('getPref', fetchPerData)
+        console.log('test')
+        commit('insertPref', fetchPerData)
       })
       .catch((error) => {
         console.error(error)
