@@ -10,7 +10,7 @@
         </li>
       </template>
     </ul>
-    <div class="mt-10 ml-10" @click="isActive = !isActive">
+    <div class="mt-10 ml-10" @click="isActiveMenuIcon">
       <MenuIconButton :isActiveMenu="isActive" />
     </div>
   </aside>
@@ -33,6 +33,11 @@ export default Vue.extend({
   computed: {
     prefData() {
       return this.$store.state.pref
+    },
+  },
+  methods: {
+    isActiveMenuIcon() {
+      this.isActive ? (this.isActive = false) : (this.isActive = true)
     },
   },
   async mounted() {
