@@ -1,5 +1,5 @@
 <template>
-  <aside class="flex">
+  <aside class="flex w-3/12">
     <ul class="grid grid-cols-2 gap-3 shadow-md p-10" v-if="isActive">
       <template v-for="item in prefData">
         <li :key="item.prefCode">
